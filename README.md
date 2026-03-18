@@ -1,9 +1,5 @@
 # TP Mi-Guidé Django — Installation et Architecture de Base
 
-> **Université Abdelmalek Essaadi — FST Tanger**  
-> Licence | Développement Web Avancé — Back End (Python) | 2025/2026  
-> Prof. Sara AHSAIN
-
 ---
 
 ## Description
@@ -129,6 +125,7 @@ Accédez à l'interface d'administration Django sur `/admin/` pour gérer les ob
 
 | Commande | Description |
 |----------|-------------|
+|'python -m venv monenv && monenv\Scripts\activate' | activer l'environnement |
 | `python manage.py runserver` | Lancer le serveur local |
 | `python manage.py makemigrations` | Générer les migrations |
 | `python manage.py migrate` | Appliquer les migrations |
@@ -136,9 +133,9 @@ Accédez à l'interface d'administration Django sur `/admin/` pour gérer les ob
 | `python manage.py startapp nom` | Créer une nouvelle application |
 
 ---
+##stack
+Python 3.13 · Django 6.0.3 · SQLite
 
 ## Auteure
 
 **Doha ZIOUANI**  
-Etudiante en Licence Développement Web Avancé  
-Université Abdelmalek Essaadi — FST Tanger
