@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<body class="p-5">
+  <div class="container">
+    <h1>Word Counter</h1>
+    <form method="post">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="text" class="form-label">Text</label>
+        <textarea id="text" name="text" class="form-control" rows="4">{{ text }}</textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Count words</button>
+    </form>
+
+    {% if amount is not None %}
+      <div class="alert alert-info mt-4">
+        Word count: <strong>{{ amount }}</strong>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
