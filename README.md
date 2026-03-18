@@ -125,7 +125,7 @@ Accédez à l'interface d'administration Django sur `/admin/` pour gérer les ob
 
 | Commande | Description |
 |----------|-------------|
-|'python -m venv monenv && monenv\Scripts\activate' | activer l'environnement |
+|`python -m venv monenv && monenv\Scripts\activate` | activer l'environnement |
 | `python manage.py runserver` | Lancer le serveur local |
 | `python manage.py makemigrations` | Générer les migrations |
 | `python manage.py migrate` | Appliquer les migrations |
@@ -133,7 +133,7 @@ Accédez à l'interface d'administration Django sur `/admin/` pour gérer les ob
 | `python manage.py startapp nom` | Créer une nouvelle application |
 
 ---
-##stack
+## stack
 Python 3.13 · Django 6.0.3 · SQLite
 
 ## Auteure
